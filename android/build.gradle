@@ -12,15 +12,15 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.android.tools.build:gradle:3.4.1'
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 27)
-    buildToolsVersion safeExtGet('buildToolsVersion', '27.0.3')
+    compileSdkVersion safeExtGet('compileSdkVersion', 28)
+    buildToolsVersion safeExtGet('buildToolsVersion', '28.0.3')
 
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
@@ -49,6 +49,6 @@ repositories {
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "com.android.support:appcompat-v7:${safeExtGet('supportLibVersion', '27.1.0')}"
+    implementation "androidx.appcompat:appcompat:1.0.0"
     compileOnly 'com.facebook.react:react-native:+'
 }
