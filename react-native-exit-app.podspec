@@ -5,7 +5,8 @@ Pod::Spec.new do |s|
   s.name         = "react-native-exit-app"
   s.version      = package['version']
   s.summary      = package['description']
-  s.license      = "MIT (example)"
+  s.homepage      = "https://github.com/banye/react-native-exit-app#readme"
+  s.license      = "MIT"
   s.author             = { "" => "" }
   s.platform     = :ios, "9.0"
   s.framework    = 'UIKit'
