@@ -2,7 +2,7 @@ require 'json'
 Pod::Spec.new do |s|
   package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
-  s.name         = "react-native-exit-app"
+  s.name         = "RCTToast"
   s.version      = package['version']
   s.summary      = package['description']
   s.homepage      = "https://github.com/banye/react-native-exit-app#readme"
